@@ -6,6 +6,7 @@ import { readTextFile } from "@tauri-apps/api/fs";
 
 import "./App.css";
 import PersonCard from "./Components/PersonCard/PersonCard";
+import OrgTree from "./Components/OrgTree/OrgTree";
 
 // Reads the `$APPDATA/users` directory recursively
 
@@ -61,6 +62,8 @@ function App() {
           <p>{file}</p>
         </div>
       ) : null}
+
+      <OrgTree />
     </div>
   );
 }
