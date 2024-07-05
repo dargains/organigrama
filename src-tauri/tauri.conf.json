@@ -12,6 +12,14 @@
   "tauri": {
     "allowlist": {
       "all": false,
+      "dialog": {
+        "open": true
+      },
+      "fs": {
+        "readFile": true,
+        "readDir": true,
+        "scope": ["$RESOURCE/*"]
+      },
       "shell": {
         "all": false,
         "open": true
